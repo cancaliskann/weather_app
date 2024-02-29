@@ -17,7 +17,7 @@
     <div class="weather">
         <img src="images/cloudy.png" class="weather-icon">
         <h1 class="temp"> 18°c </h1>
-        <h2 clas="city"> Berlin </h2>
+        <div class="city"> <h2>  Berlin </h2> </div>
         <div class="details">
             <div class="col">
                 <img src="images/humidty.png"> 
@@ -37,21 +37,6 @@
         </div>
     </div>
 </div>
-<script>
-
-const apiKey = "9c867a6081632b9e75d0200e0b7234ff";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=berlin";
-
-
-async function checkWeather(){
-    const response = await fetch(apiUrl + `&appid=${apiKey}`);
-    var data = await response.json();
-
-    console.log(data);
-}
-
-checkWeather();
-
-</script> 
+<script src="script.js"> </script> 
 </body>
 </html>
