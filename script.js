@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     async function checkWeather(city) {
         const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
 
-        if(response.status == 404){
+        if(response.status == 404 || response.status === 400){
             document.querySelector(".error").style.display = "block";
             document.querySelector(".weather").style.display = "none";
             changeBackground('#2f6692');

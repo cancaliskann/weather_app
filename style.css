@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -47,7 +48,7 @@ body{
 .search button{
     border: 0;
     outline: 0;
-    background: rgb(255, 255, 255, 0.267);
+    background: rgba(253, 253, 253, 0);
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -101,6 +102,8 @@ margin-top: -6px;
     display: none;
 }
 .error{
+    color: rgb(255, 166, 0);
+    font-weight: bold;
     text-align: left;
     margin-left: 10px;
     font-size: 14px;
