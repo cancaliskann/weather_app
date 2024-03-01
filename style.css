@@ -27,7 +27,7 @@ body{
     
 }
 .search ::placeholder{
-    color: #555555b2
+    color: #555
 }
 
 .search input{
@@ -69,6 +69,11 @@ body{
 .weather h2{
     font-size: 45px;
     font-weight: 400;
+    margin-top: -10px;
+}
+.city {     
+    font-size: 45px;  
+    font-weight: 400; 
     margin-top: -10px;
 }
 .details{
