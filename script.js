@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchBtn = document.querySelector(".search button");
     const weatherIcon = document.querySelector(".weather-icon");
 
+    const weatherContainer = document.querySelector(".weather"); 
+    const errorContainer = document.querySelector(".error"); 
+
+
     function changeBackground(color) {
         document.body.style.background = color;
      }
@@ -49,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
             
             document.querySelector(".weather").style.display = "block"; 
             document.querySelector(".error").style.display = "none";
+            
                 }
 
     }
